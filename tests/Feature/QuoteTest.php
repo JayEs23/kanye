@@ -18,6 +18,18 @@ class QuoteTest extends TestCase
 
         $this->assertEquals('The world is my ashtray.', $quote->content);
     }
+    
+    /**
+     * testCreateQuotes
+     *
+     * @return void
+     */
+    public function testCreateQuotes()
+    {
+        $quote = Quote::createQuotes();
+        $quotes = Quote::all();
+        $this->assertNotEmpty($quotes);
+    }
 
     public function testCanFindQuoteById()
     {
@@ -29,4 +41,6 @@ class QuoteTest extends TestCase
 
         $this->assertEquals($quote->id, $foundQuote->id);
     }
+
+
 }

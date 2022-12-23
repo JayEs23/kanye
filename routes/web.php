@@ -18,7 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/Quotes', [App\Http\Controllers\QuoteController::class,'getRandomQuotes')->name('getQuotes');
+Route::get('/Quotes', [App\Http\Controllers\QuoteController::class,'getRandomQuotes'])->name('getQuotes');
