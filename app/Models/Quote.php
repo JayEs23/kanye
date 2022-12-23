@@ -8,6 +8,14 @@ use GuzzleHttp\Client;
 
 class Quote extends Model
 {
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'content',
+    ];
     public function getRandomQuotes()
     {
         $client = new Client();
@@ -16,8 +24,7 @@ class Quote extends Model
 
         foreach ($quotes as $quote) {
             Quote::create([
-                'text' => $quote['quote'],
-                'author' => 'Kanye West',
+                'content' => $quote['quote'],
             ]);
         }
     }

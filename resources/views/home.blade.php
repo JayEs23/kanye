@@ -26,7 +26,7 @@
 
 <script>
     function getQuotes() {
-        fetch("http://127.0.0.1:8000/Quotes").then(response => response.json()).then(data => {
+        fetch("/Quotes").then(response => response.json()).then(data => {
             // Clear previous quotes
             document.getElementById("quotes").innerHTML = "";
             
