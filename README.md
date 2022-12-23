@@ -17,7 +17,8 @@ A web application that displays random Kanye West quotes and allows users to ref
 5. Generate an app key: `php artisan key:generate`
 6. Set up the database connection in the `.env` file
 7. Run the migrations: `php artisan migrate`
-8. Start the development server: `php artisan serve`
+8. Run the database seeding to populate the database from the kanye.rest API
+9. Start the development server: `php artisan serve`
 
 ### Testing
 
