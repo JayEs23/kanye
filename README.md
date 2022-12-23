@@ -10,8 +10,8 @@ A web application that displays random Kanye West quotes and allows users to ref
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/kanye-west-quotes.git`
-2. Navigate to the project directory: `cd kanye-west-quotes`
+1. Clone the repository: `git clone https://github.com/JayEs23/kanye.git`
+2. Navigate to the project directory: `cd kanye`
 3. Install dependencies: `composer install`
 4. Copy the example environment file: `cp .env.example .env`
 5. Generate an app key: `php artisan key:generate`
